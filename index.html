@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./asset/css/bootstrap.min.css" type="text/css">
+    <link rel="Stylesheet" href="./asset/css/datatables.min.css" type="text/css">
+    <link rel="Stylesheet" href="./asset/css/style.css" type="text/css">
+    <link rel="Stylesheet" href="./asset/css/utility.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./asset/logo/spotify_alt_macos_bigsur_icon_189704.ico">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+</head>
+
+<body>
+    <div class="Container d-flex">
+        <div class="left border border-0 p-2 pe-0 mt-1">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-x-octagon " viewBox="0 0 16 16">
+                    <path
+                        d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z" />
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </div>
+            <div class="home bg-grey rounded-3 p-4 ">
+                <img src="./asset/logo/spotify.svg" alt="Spotify" class="invert" width="100 ">
+                <!-- svg  specification added (xmlns) using a file-->
+                <ul class="list-unstyled">
+                    <li class="pt-3">
+                        <a class="text-white no-underline fs-6 fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-house-door-fill me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="pt-4">
+                        <a class="text-white no-underline fs-6 fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-search me-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742   10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="library bg-grey  rounded-3 mt-2 p-3">
+                <div class="heading d-flex align-item-center">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                        class="Svg-sc-ytk21e-0 bneLcE invert pb-1">
+                        <path
+                            d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                        </path>
+                    </svg>
+                    <h6 class="fw-bold">
+                        Your Library
+                    </h6>
+                </div>
+                <div class="songs_list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer d-flex pe-3">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right border border-0 p-2 mt-1">
+            <div class="right_conteiner bg-grey rounded-3">
+                <div class="right_header d-flex justify-content-between rounded-3 p-3">
+                    <div class="right_nav d-flex align-items-center">
+                        <img src="./asset/svg/humburgur.svg" class="invert humburger">
+                        <div class="svg_head">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#ffffff" fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="button_container">
+                        <button class="btn border-0 fw-bold" id="signup_btn">sign up</button>
+                        <button class="btn border-0" id="login_btn">Log in</button>
+                    </div>
+                </div>
+                <div class="spotify_playlist p-3">
+                    <h2 class="p-2">Spotify Playlists</h2>
+                    <div class="card_container d-flex">
+
+                    <!-- <div data-folder="ncs" class="cards p-2">
+                            <div class="play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 20V4L19 12L5 20Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                        stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <img src="./asset/img/Song_Thumbnail.jfif" alt="">
+                            <h2>ANIMAL</h2>
+                            <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                        </div>
+
+                        <div data-folder="cs" class="cards p-2">
+                            <div class="play">3
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path d="M5 20V4L19 12L5 20Z" fill="#000" stroke="#141B34" stroke-width="1.5"
+                                        stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <img src="./asset/img/Song_Thumbnail.jfif" alt="">
+                            <h2>ANIMAL</h2>
+                            <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                        </div> -->
+
+                    </div>
+                    <div class="playbar invert">
+                        <div class="seekbar">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="abovebar d-flex justify-content-between">
+                            <div class="song_info">
+
+                            </div>
+                            <div class="song_btn d-flex justify-content-center">
+                                <div id="previous">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
+                                        class="bi bi-skip-backward" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m7 1.133L1.696 8 7.5 11.367zm7.5 0L9.196 8 15 11.367z" />
+                                    </svg>
+                                </div>
+                                <div class="mx-3">
+                                    <img width="32" src="./asset/svg/play.svg" id="play">
+                                </div>
+
+                                <div id="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
+                                        class="bi bi-skip-forward" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.752l-6.267 3.636c-.52.302-1.233-.043-1.233-.696v-2.94l-6.267 3.636C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696L7.5 7.248v-2.94c0-.653.713-.998 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5M1 4.633v6.734L6.804 8zm7.5 0v6.734L14.304 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="timevol d-flex align-item-center ">
+                                <div class="song_time">
+                                </div>
+                                <div class="volume d-flex  justify-content-center align-items-center">
+                                    <img src="./asset/svg/volume.svg" alt="volume" width="25">
+                                    <div class="range">
+                                        <input type="range" name="volume" id="range">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./asset/js/jquery-1.12.4.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/datatables.min.js"></script>
+    <script src="./asset/js/spotify.js"></script>
+
+</body>
+
+</html>

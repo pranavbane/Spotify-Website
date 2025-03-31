@@ -150,8 +150,9 @@ button>* {
 }
 
 #login_btn:hover {
-    font-weight: bold;
-    font-size: 17px;
+    /* font-weight: bold;
+    font-size: 17px; */
+    background-color: #a59b9b;
 }
 
 .playbar {

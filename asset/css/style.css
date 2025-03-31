@@ -110,16 +110,16 @@ body {
 
 .play {
     position: absolute;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
     background-color: #1ed760;
     border-radius: 50%;
     padding: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 140px;
-    right: 17px;
+    top: 221px;
+    right: 12px;
     opacity: var(--a);
     transition: all 1s ease-out;
 }
